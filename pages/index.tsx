@@ -1,9 +1,13 @@
 //Server rendering, server send HTML not JS
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  useEffect(() => {
+    alert('Hello!')
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
