@@ -4,6 +4,7 @@
 
 import { useRouter } from 'next/dist/client/router'
 
+//if we want catch all routes we must to create file: [...name].tsx
 export default function FruitName() {
     const router = useRouter();
 
